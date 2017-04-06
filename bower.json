@@ -1,0 +1,21 @@
+{
+  "name": "dataroot-task2",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nikita Korba <no.korba@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nikitakorba/dataroot-task2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap": "*"
+  }
+}
