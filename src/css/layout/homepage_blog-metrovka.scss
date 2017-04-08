@@ -1,0 +1,74 @@
+.wrap {
+    border: 1px solid black;
+}
+// .blog-metrovka__description {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+.heading {
+    font-size: $font-size-base + 10px;
+    line-height: 1.33;
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+.description {
+    line-height: 1.43;
+    max-width: 476px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.article-row {
+    display: flex;
+    justify-content: center;
+}
+
+.article:last-child {
+    margin-right: 0px;
+}
+.article {
+    width: 272px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__image {
+    margin-bottom: 21px;
+    width: 272px;
+    height: 182px;
+}
+
+.article__rubric {
+    text-transform: uppercase;
+    font-size: $font-size-base - 3px;
+    padding-bottom: 7px;
+    line-height: 1.45;
+}
+
+.article__rubric--lifehack {
+    color: #ba8ff7;
+}
+
+.article__rubric--advise {
+    color: #30ae63;
+}
+
+.article__rubric--tech {
+    color: #2573d8;
+}
+
+.article__title {
+    font-size: $font-size-base + 2px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.article__author-and-time {
+    line-height: 1.33;
+    font-size: $font-size-base - 2px;
+    color: $dark-gray;
+}
