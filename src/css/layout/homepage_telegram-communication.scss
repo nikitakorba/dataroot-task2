@@ -1,0 +1,39 @@
+.wrap__tel-com {
+    padding-top: 20px;
+}
+
+.description__tel-com {
+    max-width: 504px;
+}
+
+.metrovka-bot {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.metrovka-bot__picture {
+    padding-right: 92px;
+    height: 573px;
+    weight: 282px;
+}
+
+.metrovka-bot__telegram {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.telegram__heading {
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.tg_logo {
+    padding-right: 20px;
+}
+.headline {
+    font-size: $font-size-base + 10px;
+    line-height: 1.33;
+}

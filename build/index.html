@@ -11,6 +11,71 @@
 </head>
 
 <body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  </head>
+  <body>
+<header class="header">
+	<div class="wrap-header">
+	    <div class="left-menu">
+    		<div class="header__logo">
+    			<img src="img/logo.svg"/>
+    		</div>
+    		<div class="left-menu-nav">
+            <nav>
+        			<a class="nav__item" href="#">Аренда</a>
+        			<a class="nav__item" href="#">Продажа</a>
+        			<a class="nav__item" href="#">Посуточно</a>
+                    <a class="nav__item"  href="#">&bull;&bull;&bull; Еще</a> <!-- Добавить троеточие -->
+            </nav>
+        </div>
+      </div>
+      <div class="right-menu">
+          <div class = "right">
+      			<button class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button>
+      			<a class="header__button-enter"  href="#">Войти</a>
+          </div>
+      </div>
+    </div>
+</header>
+<div class="property-search">
+    <div class="wrap">
+        <div class="property-search__headline">
+            <h1 class="headline">Поиск недвижимости в Украине</h1>
+        </div>
+        <div class="form">
+            <div class="property-search__select-city">
+                <p>Выберите город:</p>
+                <select name="City">
+                  <option class="select-city__option" value="Kyiv">Киев</option>
+                  <option class="select-city__option" value="Lviv">Львов</option>
+                  <option class="select-city__option" value="Odessa">Одесса</option>
+                </select>
+            </div>
+            <div class="property-search__select-room">
+                <p>Количество комнат:</p>
+                <input class="select-room__checkbox" type="checkbox" name="rooms" value="1" id="property-search__checkbox1"><label for="property-search__checkbox1"></label>
+                <input class="select-room__checkbox" type="checkbox" name="rooms" value="2" id="property-search__checkbox2"><label for="property-search__checkbox2"></label>
+                <input class="select-room__checkbox" type="checkbox" name="rooms" value="3" id="property-search__checkbox3"><label for="property-search__checkbox3"></label>
+                <input class="select-room__checkbox" type="checkbox" name="rooms" value="4" id="property-search__checkbox4"><label for="property-search__checkbox4"></label>
+                <input class="select-room__checkbox" type="checkbox" name="rooms" value="5" id="property-search__checkbox5"><label for="property-search__checkbox5"></label>
+            </div>
+            <div class="property-search__button-submit">
+                <br>
+                <button class="button button--w201" type="submit">Перейти к поиску</button>
+            </div>
+            </div>
+    </div>
+</div>
+
+  </body>
+</html>
 <div class="property-metro">
         <div class="wrap-property">
         <div class="flex-container">
@@ -150,6 +215,40 @@
             </div>
         </div>
       </div>
+<div class="telegram-communication">
+    <div class="wrap wrap__tel-com">
+        <h1 class="heading">Общайтесь в Telegram</h1>
+        <p class="description description__tel-com">Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений.</p>
+        <div class="metrovka-bot">
+            <!-- <div class="bot-choice">
+                <div class="bot-choice__item">
+                    <input type="radio" value="TGserach1" name="radio7" class="search-estate__radio" id="search-estate__radio7" checked="">
+                    <label for="search-estate__radio7">Поиск недвижимости</label>
+                </div>
+                <div class="bot-choice__item">
+                    <input type="radio" value="TGspeak8" name="radio8" class="search-estate__radio" id="search-estate__radio8" checked=""><label for="search-estate__radio8">Общение с клиентами</label>
+                </div>
+            </div> -->
+            <div class="metrovka-bot__picture">
+                <img src="img/tg_iphone5s.jpg" alt="Telegram on Iphone 5S">
+            </div>
+            <div class="metrovka-bot__telegram">
+                <div class="telegram__heading">
+                    <img class="tg_logo" src="img/tg_logo.png" alt="Telegram Logo">
+                    <h1 class="headline">Telegram</h1>
+                </div>
+                <h1 class="headline">Metrovka Bot</h1>
+                <ul  class="ul">
+                    <ol>Собирайте аналитику по объектам</ol>
+                    <ol>Получайте подсказки по эффективному продвижению объявлений</ol>
+                    <ol>Общайтесь с клиентами через специальный канал телекоммуникации</ol>
+                </ul>
+                <a  class="button button--w320" href="#">Присоедениться в Телеграмм</a>
+                <!-- Два кружка -->
+            </div>
+        </div>
+    </div>
+</div>
 <div class="blog-metrovka">
     <div class="wrap">
         <div class="blog-metrovka__description">
