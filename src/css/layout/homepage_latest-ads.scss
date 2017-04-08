@@ -85,3 +85,9 @@ div.latest-ads_list__item {
     /*display: inline-block;*/
     padding-right: 35px;
 }
+
+@media screen and (max-width: 390px) {
+   .latest-ads__headline {
+        font-size: $font-size-base + 2px;
+    }
+}
