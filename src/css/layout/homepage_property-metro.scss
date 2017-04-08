@@ -1,6 +1,7 @@
 .button {
     font-size: $font-size-base;
     border: 0px;
+    border-radius:2px;
     height:$button-height;
     font-family: $font-family-base;
 
@@ -16,7 +17,7 @@
 .metro-image {
     width: 100%;
 }
-.wrap {
+.wrap-property {
     max-width: $wrap-width;
     margin: 20px auto;
     display: flex;
@@ -44,8 +45,8 @@
 }
 .property-metro__station {
   position: relative;
-
-    &:after {
+}
+.property-metro__station:after {
     content: '\f0d7';
     font: normal normal normal 17px/1 FontAwesome;
     color: $primary-color;
@@ -56,15 +57,14 @@
     pointer-events: none;
 }
 
-
-    select {
+.property-metro__station select {
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     display: block;
     width: 100%;
     max-width: 320px;
-    height: 40;
+    height: $button-height;
     float: right;
     margin: 5px 0px;
     padding: 0px 24px 0px 15px;
@@ -79,14 +79,13 @@
     outline: none;
     font-family: $font-family-base;
 }
-}
 
 
-.search-estate__radio {
-  input{
+
+input.search-estate__radio {
   visibility: hidden;
   display: none;
-}
+
 }
 .search-estate__radio:checked + label{
   border-bottom:  2px solid $primary-color;

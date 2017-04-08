@@ -3,322 +3,152 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Metrovka – Поиск недвижимости в Украине</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<header class="header">
-	<div class="wrap">
-		<div class="header__logo">
-			<img src="img/logo.png" alt="logo">
-		</div>
-		<nav class="nav">
-			<a class="nav__item" href="#">Аренда</a>
-			<a class="nav__item" href="#">Продажа</a>
-			<a class="nav__item" href="#">Посуточно</a>
-			<a class="nav__item"  href="#">Еще</a> <!-- Добавить троеточие -->
-		</nav>
-		<div>
-			<a class="header__button-new-ad"  href="#">Разместить объявление</a>
-		</div>
-		<div>
-			<a class="header__button-enter"  href="#">Войти</a>
-		</div>
-	</div>
-</header>
-<div class="property-search">
-    <div class="wrap">
-        <div class="property-search__headline">
-            <h1 class="headline">Поиск недвижимости в Украине</h1>
-        </div>
-        <form class="property-search__form">
-            <div class="property-search__select-city">
-                <p>Выберите город:</p>
-                <select name="City">
-  <option class="select-city__option" value="Kyiv">Киев</option>
-  <option class="select-city__option" value="Lviv">Львов</option>
-  <option class="select-city__option" value="Odessa">Одесса</option>
-  </select>
-            </div>
-            <div class="property-search__select-room">
-                <p>Количество комнат:</p>
-                <input class="select-room__checkbox" type="checkbox" name="rooms" value="1">1
-                <input class="select-room__checkbox" type="checkbox" name="rooms" value="2">2
-                <input class="select-room__checkbox" type="checkbox" name="rooms" value="3">3
-                <input class="select-room__checkbox" type="checkbox" name="rooms" value="4">4
-                <input class="select-room__checkbox" type="checkbox" name="rooms" value="5">5+
-            </div>
-            <div class="property-search__button-submit">
-                <button class="button button--w201" type="submit">Перейти к поиску</button>
-            </div>
-        </form>
-    </div>
-</div>
 <div class="property-metro">
-    <div class="wrap">
-        <div class="property-metro__search-estate">
-            <h1 class="headline">Недвижимость возле метро</h1>
-            <form class="property-metro__form">
-                <ul class="search-estate_list">
-                    <li class="search-estate_list__item">
-                        <input type='radio' value='Flats' name='radio' class='search-estate__radio' />
-                        <label class="search-estate__label">Квартиры</label>
-                    </li>
-                    <li class="search-estate_list__item">
-                        <input type='radio' value='Houses' name='radio' class='search-estate__radio' />
-                        <label class="search-estate__label">Дома</label>
-                    </li>
-                    <li class="search-estate_list__item">
-                        <input type='radio' value='Offices' name='radio' class='search-estate__radio' />
-                        <label class="search-estate__label">Офисы</label>
-                    </li>
-                </ul>
+        <div class="wrap-property">
+        <div class="flex-container">
+            <h3 class="headline">Недвижимость возле метро</h3>
+            <div class="property-metro__estate">
+                    <div class="search-estate_list__item">
+                        <input type='radio' value='Flats1' name='radio1' class='search-estate__radio' id="search-estate__radio1" checked/>
+                        <label for="search-estate__radio1">Квартиры</label>
+                    </div>
+                    <div class="search-estate_list__item">
+                        <input type='radio' value='Houses1' name='radio1' class='search-estate__radio'
+                        id="search-estate__radio2">
+                        <label for="search-estate__radio2">Дома</label>
+                    </div>
+                    <div class="search-estate_list__item">
+                        <input type='radio' value='Offices1' name='radio1' class='search-estate__radio'
+                               id="search-estate__radio3">
+                        <label for="search-estate__radio3">Офисы</label>
+                    </div>
+            </div>
+            <div class="property-metro__station">
                 <select name="Metro station">
                     <option class="search-estate__option" value="Polytechnical">Политехнический институт</option><!--Добавить красную точечку-->
                     <option class="search-estate__option" value="Maidan">Майдан Независимости</option>
                     <option class="search-estate__option" value="Olympiyska">Олимпийская</option>
                 </select>
-                <button class="button button--w320" type="submit">Показать результаты поиска</button>
-            </form>
+                <br>
+                <button class="button button--w320" type="button">Показать результаты поиска</button>
+            </div>
         </div>
-        <div class="property-metro__station-image">
-            <img src="img/metro.png" alt="metro image">
+        <div class="metro-img-container">
+            <img class="metro-img" src="img/metro.png">
         </div>
     </div>
-</div>
+    </div>
 <div class="best-deals">
-    <div class="wrap">
-        <h1 class="headline">Лучшие предложения в Киеве</h1>
-        <div class=“proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“proposal__price”>7800 грн</p>
-            <img src=“#” class=“best-deals__tick”>
-            <p class=“proposal__rooms”>2 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“proposal__area”>30 кв.м.</p>
-            <p class=“proposal__metro”>Политехнический институт</p>
-            <!--Добавить красную точечку-->
-        </div>
-        <div class=“proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“proposal__price”>10200 грн</p>
-            <img src=“#” class=“best-deals__tick”>
-            <p class=“proposal__rooms”>1 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“proposal__area”>30 кв.м.</p>
-            <p class=“proposal__metro”>Политехнический институт</p>
-            <!--Добавить красную точечку-->
-        </div>
-        <div class=“proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“proposal__price”>6900 грн</p>
-            <img src=“#” class=“best-deals__tick”>
-            <p class=“proposal__rooms”>2 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“proposal__area”>30 кв.м.</p>
-            <p class=“proposal__metro”>Политехнический институт</p>
-            <!--Добавить красную точечку-->
-        </div>
-        <div class=“proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“proposal__price”>9000 грн</p>
-            <img src=“#” class=“best-deals__tick”>
-            <p class=“proposal__rooms”>2 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“proposal__area”>30 кв.м.</p>
-            <p class=“proposal__metro”>Политехнический институт</p>
-            <!--Добавить красную точечку-->
-        </div>
 
-        <div class=“open-another-tab”>
-            <a href=“#”>Смотреть лучшие ценовые предложения</a>
+    <div class="wrap">
+        <!-- <h3 class="headline">Лучшие предложения в Киеве</h3> -->
+        <div class="heading">
+            <p class="best-deals__headline">Лучшие предложения в Киеве</p>
+        </div>
+        <div class="proposal">
+            <a href="#"><img src="img/room.jpg" alt="estate"></a>
+            <!--Задать размеры -->
+            <p class="proposal__price">7800 грн <img src="img/tick.svg" class="best-deals__tick"> </p>
+
+            <p class="proposal__rooms">2 комн.&bull; 30 кв.м.</p>
+            <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+            <!--Добавить красную точечку-->
+        </div>
+        <div class="proposal">
+            <a href="#"><img src="img/room.jpg" alt="estate"></a>
+            <!--Задать размеры -->
+            <p class="proposal__price">10200 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+            <p class="proposal__rooms">2 комн.&bull; 30 кв.м.</p>
+            <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+            <!--Добавить красную точечку-->
+        </div>
+        <div class="proposal">
+            <a href="#"><img src="img/room.jpg" alt="estate"></a>
+            <!--Задать размеры -->
+            <p class="proposal__price">6900 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+            <p class="proposal__rooms">2 комн.&bull; 30 кв.м.</p>
+            <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+            <!--Добавить красную точечку-->
+            <!--Добавить красную точечку-->
+        </div>
+        <div class="proposal">
+            <a href="#"><img src="img/room.jpg" alt="estate"></a>
+            <!--Задать размеры -->
+            <p class="proposal__price">9000 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+            <p class="proposal__rooms">2 комн.&bull; 30 кв.м.</p>
+            <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+            <!--Добавить красную точечку-->
+            <!--Добавить красную точечку-->
+        </div>
+        <div class="open-another-tab">
+            <a href="#">Смотреть лучшие ценовые предложения</a>
         </div>
     </div>
+
 </div>
 <div class="latest-ads">
-    <div class="wrap">
-        <h1 class="headline">Последние обьявления в Киеве</h1>
-        <div class="latest-ads__estate">
-            <a href="#">Квартиры</a>
-            <a href="#">Дома</a>
-            <a href="#">Офисы</a>
-        </div>
-        <div class=“latest-proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“latest-proposal__price”>11800 грн</p>
-            <img src=“#” class=“latest-ads__tick”>
-            <p class=“latest-proposal__rooms”>2 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“latest-proposal__area”>48 кв.м.</p>
-            <p class=“latest-proposal__metro”>Политехнический институт</p>
-            <!--Добавить красную точечку-->
-        </div>
-        <div class=“latest-proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“latest-proposal__price”>15000 грн</p>
-            <img src=“#” class=“latest-ads__tick”>
-            <p class=“latest-proposal__rooms”>3 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“latest-proposal__area”>100 кв.м.</p>
-            <p class=“latest-proposal__metro”>Шулявская</p>
-            <!--Добавить красную точечку-->
-        </div>
-        <div class=“latest-proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“latest-proposal__price”>11800 грн</p>
-            <img src=“#” class=“latest-ads__tick”>
-            <p class=“latest-proposal__rooms”>1 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“latest-proposal__area”>30 кв.м.</p>
-            <p class=“latest-proposal__metro”>Контрактовая площадь</p>
-            <!--Добавить синюю точечку-->
-        </div>
-        <div class=“latest-proposal”>
-            <a href=“#”><img src=“#” alt=“estate image”></a>
-            <!--Задать размеры -->
-            <p class=“latest-proposal__price”>7000 грн</p>
-            <img src=“#” class=“latest-ads__tick”>
-            <p class=“latest-proposal__rooms”>2 комн.</p>
-            <!--Добавить точечку-->
-            <p class=“latest-proposal__area”>40 кв.м.</p>
-            <p class=“latest-proposal__metro”>просп.Победы, 18А</p>
-        </div>
-        <div class=“open-another-tab”>
-            <a href=“#”>Смотреть самые свежие объявления</a>
-        </div>
-    </div>
-</div>
-<div class="telegram-communication">
-    <div class="wrap">
-        <h1 class="heading">Общайтесь в Telegram</h1>
-        <p>Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений.</p>
-        <div class="metrovka-bot">
-            <div class="metrovka-bot__choice">
-                <a class="choice__bot-search"href="#">Поиск недвижимости</a>
-                <a class="choice__bot-speak"href="#">Общение с клиентами</a>
+        <div class="wrap">
+            <div class="heading">
+                <h1 class="latest-ads__headline">Последние обьявления в Киеве</h1>
             </div>
-            <div class="metrovka-bot__picture">
-                <img src="" alt="Telegram on Iphone 5S">
-            </div>
-            <div class="metrovka-bot__telegram">
-                <div class="telegram__heading">
-                    <img src="" alt="Telegram Logo">
-                    <h1 class"headline">Telegram</h1>
+          <div class="latest-ads__estate">
+                <div class="latest-ads_list__item">
+                    <input type='radio' value='Flats' name='radio' class='latest-ads__radio' id="latest-ads__radio4" checked/>
+                    <label for="latest-ads__radio4">Квартиры</label>
                 </div>
-                <h1 class="headline">Metrovka Bot</h1>
-                <ul>
-                    <ol>Собирайте аналитику по объектам</ol>
-                    <ol>Получайте подсказки по эффективному продвижению объявлений</ol>
-                    <ol>Общайтесь с клиентами через специальный канал телекоммуникации</ol>
-                </ul>
-                <a  class="button button--w320"href="#">Присоедениться в Телеграмм</a>
-                <!-- Два кружка -->
+                <div class="latest-ads_list__item">
+                    <input type='radio' value='Houses' name='radio' class='latest-ads__radio' id="latest-ads__radio5" />
+                    <label for="latest-ads__radio5">Дома</label>
+                </div>
+                <div class="latest-ads_list__item">
+                    <input type='radio' value='Offices' name='radio' class='latest-ads__radio' id="latest-ads__radio6" />
+                    <label for="latest-ads__radio6">Офисы</label>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="telegram-communication">
-    <div class="wrap">
-        <div class="blog-metrovka__description">
-            <h1 class="heading">Блог Metrovka</h1>
-            <p>Хитрости, приемы, советы, фото и видео – все о том как продать, купить, сдать в аренду или арендовать недвижимость.</p>
-        </div>
+            <div class="latest-proposal">
+                <a href="#"><img src="img/room1.png" alt="estate image"></a>
+                <!--Задать размеры -->
+                <p class="latest-proposal__price">11800 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                <p class="latest-proposal__rooms">2 комн.&bull;48 кв.м.</p>
+                <p class="latest-proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+                <!--Добавить красную точечку-->
+            </div>
+            <div class="latest-proposal">
+                <a href="#"><img src="img/room2.png" alt="estate image"></a>
+                <!--Задать размеры -->
+                <p class="latest-proposal__price">15000 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                <p class="latest-proposal__rooms">3 комн.&bull;100 кв.м.</p>
+                <p class="latest-proposal__metro"><img class="red-dot" src="img/reddot.svg">Шулявская</p>
+                <!--Добавить красную точечку-->
+            </div>
+            <div class="latest-proposal">
+                <a href="#"><img src="img/room3.png" alt="estate image"></a>
+                <!--Задать размеры -->
+                <p class="latest-proposal__price">11800 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                <p class="latest-proposal__rooms">1 комн.&bull;30 кв.м.</p>
+                <p class="latest-proposal__metro"><img class="blue-dot" src="img/bluedot.png">Контрактовая площадь</p>
+                <!--Добавить синюю точечку-->
+            </div>
+            <div class="latest-proposal">
+                <a href="#"><img src="img/room4.png" alt="estate image"></a>
+                <!--Задать размеры -->
+                <p class="latest-proposal__price">7000 грн <img src="img/tick.svg" class="best-deals__tick"></p>
 
-        <div class="article-row">
-            <div class="article">
-                <img src="" alt="">
-                <span class="article__rubric article__rubric--violet">лайфхак</span>
-                <span class="article__title">Киевляне могут оплатить коммуналку через Facebook…</span>
-                <span class="article__author">Татьяна Малыняк</span>
-                <!-- точка -->
-                <span class="article__read-time">5 мин чтения</span>
+                <p class="latest-proposal__rooms">2 комн.&bull;40 кв.м.</p>
+                <p class="latest-proposal__metro">просп.Победы, 18А</p>
             </div>
-            <div class="article">
-                <img src="" alt="">
-                <span class="article__rubric article__rubric--violet">Совет Metrovka</span>
-                <span class="article__title">ТОП-5 самых дешевых квартир Киева/span>
-                <span class="article__author">Татьяна Малыняк</span>
-                <!-- точка -->
-                <span class="article__read-time">4 мин чтения</span>
-            </div>
-            <div class="article">
-                <img src="" alt="">
-                <span class="article__rubric article__rubric--violet">Технологии</span>
-                <span class="article__title">Смарт квартиры: цены, предложения и законность</span>
-                <span class="article__author">Татьяна Малыняк</span>
-                <!-- точка -->
-                <span class="article__read-time">2 мин чтения</span>
+            <div class="open-another-tab">
+                <a href="#">Смотреть самые свежие объявления</a>
             </div>
         </div>
-
-        <div class="open-another-tab">
-            <a href="#">Перейти на страницу блога</a>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="wrap">
-        <div class="footer__menu">
-            <ul class="footer-menu">
-                <li class="footer-menu__item">
-                    <a href="#">Metrovka</a>
-                    <ul class="footer-sub-menu">
-                        <li class="footer-sub-menu__item"><a href="#">О компании</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Пресса о нас</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Пользовательское соглашение</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Карта сайта</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Помощь</a></li>
-                    </ul>
-                </li>
-                <li class="footer-menu__item">
-                    <a href="#">Партнерство</a>
-                    <ul class="footer-sub-menu">
-                        <li class="footer-sub-menu__item"><a href="#">Как разместить обьявление</a>></li>
-                        <li class="footer-sub-menu__item"><a href="#">Инструменты продвижения</a>></li>
-                        <li class="footer-sub-menu__item"><a href="#">Правила заполнения объявлений</a>></li>
-                    </ul>
-                </li>
-                <li class="footer-menu__item">
-                    <a href="#">Узнайте больше</a>
-                    <ul class="footer-sub-menu">
-                        <li class="footer-sub-menu__item"><a href="#">Бонусная программа Bonus+</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Telegram Metrovka Bot</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Как работает поиск</a></li>
-                        <li class="footer-sub-menu__item"><a href="#">Как пользоваться избранным</a></li>
-                    </ul>
-                </li>
-                <li class="footer-menu__item">
-                    <a href="#">Контакты</a>
-                    <ul class="footer-sub-menu">
-                        <li class="footer-sub-menu__item">
-                            <a href="#"><img src="" alt="FB"></a>
-                            <a href="#"><img src="" alt="VK"></a>
-                            <a href="#"><img src="" alt="INST"></a>
-                        </li>
-                        <li class="footer-sub-menu__item">
-                            ул. Жилянская, 37
-                            <span class="footer-sub-menu__item--small">Киев, 01033</span> // вот это хз
-                        </li>
-                        <li class="footer-sub-menu__item">
-                            <button class="button button--w162" href="#">Оставить заявку</button>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__logo">
-            <img src="" alt="logo">
-        </div>
-    </div>
-</footer>
+      </div>
 </body>
 </html>
