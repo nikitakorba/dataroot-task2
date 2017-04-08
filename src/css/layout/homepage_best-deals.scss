@@ -1,0 +1,67 @@
+
+body {
+  font-family: $font-family-base;
+  color: $dark-blue-grey;
+  font-size: $font-size-base;
+}
+.wrap {
+    max-width: $wrap-width;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.proposal {
+  p{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  }
+}
+.open-another-tab {
+  width: 100%;
+  max-width: $wrap-width;
+  height: $button-height;
+  border-top: 2px solid $light-gray;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  a{
+    text-decoration: none;
+    color: $dark-blue-grey;
+    padding-top: 5px;
+  }
+}
+
+.heading {
+  width: 100%;
+  max-width: $wrap-width;
+  height: $button-height;
+  justify-content: center;
+  display: flex;
+}
+.best-deals__headline {
+  margin: 0;
+  font-weight:normal;
+  font-size: $font-size-base + 10px;
+}
+.proposal__price {
+  font-size: $font-size-base +2px;
+
+}
+.proposal__rooms {
+  font-size: $font-size-base -2px;
+  color: $dark-gray;
+}
+.proposal__metro {
+  font-size: $font-size-base -2px;
+}
+.red-dot {
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 390px) {
+   .best-deals__headline {
+        font-size: $font-size-base + 2px;
+    }
+}

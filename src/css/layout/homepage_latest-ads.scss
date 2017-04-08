@@ -1,0 +1,93 @@
+.wrap {
+    max-width: $wrap-width;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.latest-proposal > p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.open-another-tab {
+    width: 100%;
+    max-width: $wrap-width;
+    height: $button-height;
+    border-top: 2px solid $light-gray;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none;
+        color: $dark-blue-grey;
+        padding-top: 5px;
+    }
+}
+
+.heading {
+    width: 100%;
+    max-width: $wrap-width;
+    height: $button-height;
+    justify-content: center;
+    display: flex;
+}
+
+.latest-ads__headline {
+    margin: 0;
+    font-weight: normal;
+    font-size: $font-size-base +10px;
+}
+
+.latest-proposal__price {
+    font-size: $font-size-base +2px;
+}
+
+.latest-proposal__rooms {
+    font-size: $font-size-base -2px;
+    color: $dark-gray;
+}
+
+.latest-proposal__metro {
+    font-size: $font-size-base -2px;
+}
+
+.red-dot {
+    padding-right: 5px;
+}
+
+.blue-dot {
+    padding-right: 5px;
+}
+
+.latest-ads__estate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    min-height: 50px;
+    vertical-align: baseline;
+}
+
+input.latest-ads__radio {
+    visibility: hidden;
+    display: none;
+}
+
+.latest-ads__radio:checked + label {
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 5px;
+}
+
+div.latest-ads_list__item {
+    /*display: inline-block;*/
+    padding-right: 35px;
+}
+
+@media screen and (max-width: 390px) {
+   .latest-ads__headline {
+        font-size: $font-size-base + 2px;
+    }
+}
