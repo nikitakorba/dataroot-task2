@@ -1,39 +1,106 @@
+
 .wrap__tel-com {
-    padding-top: 20px;
-}
+    max-width: $wrap-width;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-.description__tel-com {
-    max-width: 504px;
 }
-
-.metrovka-bot {
+.telegram__estate {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+input.telegram__radio {
+  visibility: hidden;
+  display: none;
+}
+div.telegram_list__item {
+    /*display: inline-block;*/
+    padding-right: 35px;
+}
+.telegram__radio:checked + label{
+  border-bottom:  2px solid $primary-color;
+    padding-bottom: 5px;
+}
+.button {
+    font-size: $font-size-base;
+    border: 0px;
+    height: $button-height;
+    font-family: 'Open Sans', sans-serif
+
+}
+.button--w321 {
+    width: 100%;
+    background-color: #30ae63;
+    color: $white;
+    max-width: 320px;
+}
+
+.tel-com__heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.heading-text {
+  max-width: 500px;
+  padding-bottom: 20px;
+}
+.metrovka-bot {
+    display: flex;
+    justify-content: space-around;
     padding-top: 40px;
+    width: 100%;
+    max-width: $wrap-width;
+    align-items: center;
 }
 
-.metrovka-bot__picture {
-    padding-right: 92px;
-    height: 573px;
-    weight: 282px;
+.iphone {
+    width: 100%;
+    height: auto;
 }
-
+.list {
+    max-width: 80%;
+}
 .metrovka-bot__telegram {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    background-color: $white;
+    padding: 20px 0px;
+    max-width: 440px;
 }
 
 .telegram__heading {
     padding-bottom: 32px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .tg_logo {
     padding-right: 20px;
+    padding-left:20px;
 }
 .headline {
     font-size: $font-size-base + 10px;
     line-height: 1.33;
+}
+.button-container {
+    padding-left: 20px;
+    max-width: 320px;
+    width: 100%;
+}
+.content {
+    padding-left: 20px;
+}
+
+@media screen and (max-width:550px) {
+    .metrovka-bot__picture {
+        display: none;
+
+    }
 }
