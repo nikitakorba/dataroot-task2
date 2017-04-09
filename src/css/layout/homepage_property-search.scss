@@ -5,6 +5,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding-bottom:20px;
 }
 
 .property-search {
@@ -38,6 +39,9 @@
     flex-direction: column;
     max-width: 340px;
 }
+.form p {
+    padding-bottom:10px;
+}
 
 .property-search__select-city:after {
     content: '\f0d7';
@@ -53,6 +57,7 @@
 .property-search__headline h1 {
     font-size: $font-size-base + 18px;
     font-weight: normal;
+    padding-bottom:20px;
 }
 
 .property-search__select-city select {
@@ -64,7 +69,6 @@
     max-width: 340px;
     height: $button-height;
     float: right;
-    margin: 5px 0px;
     padding: 0px 24px 0px 15px;
     font-size: $font-size-base;
     line-height: 1.75;
@@ -95,44 +99,44 @@
 }
 
 #property-search__checkbox1+label {
-    background: url(img/1trans.png)no-repeat;
+    background: url(../img/1trans.png)no-repeat;
 }
 
 #property-search__checkbox1:checked+label {
-    background: url(img/1white.png) no-repeat;
+    background: url(../img/1white.png) no-repeat;
 }
 
 #property-search__checkbox2+label {
     ;
-    background: url(img/2trans.png)no-repeat;
+    background: url(../img/2trans.png)no-repeat;
 }
 
 #property-search__checkbox2:checked+label {
-    background: url(img/2white.png)no-repeat;
+    background: url(../img/2white.png)no-repeat;
 }
 
 #property-search__checkbox3+label {
-    background: url(img/3trans.png)no-repeat;
+    background: url(../img/3trans.png)no-repeat;
 }
 
 #property-search__checkbox3:checked+label {
-    background: url(img/3white.png)no-repeat;
+    background: url(../img/3white.png)no-repeat;
 }
 
 #property-search__checkbox4+label {
-    background: url(img/4trans.png)no-repeat;
+    background: url(../img/4trans.png)no-repeat;
 }
 
 #property-search__checkbox4:checked+label {
-    background: url(img/4white.png)no-repeat;
+    background: url(../img/4white.png)no-repeat;
 }
 
 #property-search__checkbox5+label {
-    background: url(img/5trans.png)no-repeat;
+    background: url(../img/5trans.png)no-repeat;
 }
 
 #property-search__checkbox5:checked+label {
-    background: url(img/5white.png)no-repeat;
+    background: url(../img/5white.png)no-repeat;
 }
 
 @media screen and (max-width:750px) {
