@@ -1,0 +1,95 @@
+body {
+    font-family: $font-family-base;
+    margin: 0;
+    font-size: $font-size-base;
+}
+
+.bg {
+    background-image: url(bg/homepage.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    width: 100%;
+    /*
+    background-image: url(bg/homepage.png);
+    background-size: cover;
+*/
+}
+
+.wrap-header {
+    max-width: $wrap-width;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: inline-flex;
+}
+
+.header > a {
+    color: $white;
+    text-decoration: none;
+}
+
+.nav__item {
+    margin: 0px 10px;
+}
+
+.nav__item:hover {
+    transition: 0.1s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $white;
+}
+
+.button {
+    font-size: $font-size-base;
+    border: 0px;
+    height: $button-height;
+    font-family: $font-family-base;
+    outline: none;
+    border-radius: 2px;
+}
+
+.button-header {
+    background-color: transparent;
+    width: 240px;
+    color: white;
+    cursor: pointer;
+}
+.button-header:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+}
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.left-menu-nav {
+    display: inline-flex;
+    align-content: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.header__button-enter {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.header__button-enter:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width:750px) {
+    .header {
+        padding-left: 20px;
+    }
+}
