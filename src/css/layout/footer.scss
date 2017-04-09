@@ -13,6 +13,12 @@ a {
     padding-right: 12px;
     vertical-align: top;
     line-height: 2.0;
+    font-weight: 600;
+    padding-bottom: 32px;
+}
+
+.footer-menu__item:last-child {
+    padding-right: 0px;
 }
 
 .footer-sub-menu {
@@ -24,25 +30,35 @@ a {
     line-height: 1.54;
     margin-bottom: 16px;
     width: 162px;
+    font-weight: normal;
 }
 
-.footer-sub-menu__item img {
+.footer-sub-menu__logotypes {
+
+    display: flex;
+}
+
+.footer-sub-menu__logotypes img {
     padding-right: 16px;
 }
 
-.footer__menu {
 
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
 .footer__logo {
-    justify-content: center;
+    padding: 28px 0px 60px 0px;
 
 
 }
 
 .footer-sub-menu__item--small {
     font-size: $font-size-base - 3px;
+    line-height: 1.82;
 }
 
 .button {
@@ -61,6 +77,8 @@ a {
 }
 
 .flex-column {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
