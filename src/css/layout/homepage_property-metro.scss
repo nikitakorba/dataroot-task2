@@ -29,7 +29,7 @@
     flex-direction: column;
     flex-flow: wrap;
     justify-content: space-around;
-    max-width: 320px;
+    max-width: 50%;
     min-height: 212px;
 }
 
@@ -45,13 +45,14 @@
 }
 .property-metro__station {
   position: relative;
+  width:100%;
 }
 .property-metro__station:after {
     content: '\f0d7';
     font: normal normal normal 17px/1 FontAwesome;
     color: $primary-color;
-    right: 11px;
-    top: 1px;
+    left: 290px;
+    top: -2px;
     padding: 15px 0px 0px 8px;
     position: absolute;
     pointer-events: none;
@@ -62,11 +63,9 @@
     -moz-appearance: none;
     appearance: none;
     display: block;
-    width: 100%;
-    max-width: 320px;
+    width:320px;
     height: $button-height;
-    float: right;
-    margin: 5px 0px;
+    float: left;
     padding: 0px 24px 0px 15px;
     font-size: $font-size-base -2px;
     line-height: 1.75;
