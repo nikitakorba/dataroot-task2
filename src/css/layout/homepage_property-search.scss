@@ -5,45 +5,34 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding-bottom:20px;
+    padding-bottom: 38px;
 }
 
 .property-search {
     min-height: 120px;
     color: white;
 }
-.button {
-    font-size: $font-size-base;
-    border: 0px;
-    height: $button-height;
-    font-family: $font-family-base;
-    outline: none;
-    border-radius: 2px;
-}
 
-.button--w201 {
-    width: 200px;
-    background-color: $white;
-    color: $primary-color;
-}
-.form {
+.form-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
 }
-.property-search__select-city {
+
+.select-city {
     position: relative;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     max-width: 340px;
 }
+
 .form p {
     padding-bottom:10px;
 }
 
-.property-search__select-city:after {
+.select-city:after {
     content: '\f0d7';
     font: normal normal normal 17px/1 FontAwesome;
     color: $primary-color;
@@ -54,13 +43,18 @@
     pointer-events: none;
 }
 
-.property-search__headline h1 {
-    font-size: $font-size-base + 18px;
-    font-weight: normal;
-    padding-bottom:20px;
+.property-search__title {
+    padding-bottom:40px;
 }
 
-.property-search__select-city select {
+.title {
+    font-size: $font-size-base + 18px;
+    font-weight: normal;
+    line-height: 38.9px;
+    letter-spacing: 0.3px;
+}
+
+.select-city select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -79,7 +73,14 @@
     border-radius: 2px;
     word-break: normal;
     outline: none;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+}
+
+.select-city__title, .select-room__title {
+    line-height: 17px;
+    padding-bottom: 9px;
+    display: block;
+    font-weight: bold;
 }
 
 .select-room__checkbox {
@@ -149,7 +150,7 @@
         padding-left: 20px;
         padding-bottom: 20px;
     }
-    .property-search__select-city {
+    .select-city {
         width: 300px;
     }
 }

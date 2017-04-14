@@ -24,19 +24,6 @@ div.telegram_list__item {
   border-bottom:  2px solid $primary-color;
     padding-bottom: 5px;
 }
-.button {
-    font-size: $font-size-base;
-    border: 0px;
-    height: $button-height;
-    font-family: 'Open Sans', sans-serif
-
-}
-.button--w321 {
-    width: 100%;
-    background-color: #30ae63;
-    color: $white;
-    max-width: 320px;
-}
 
 .tel-com__heading {
     display: flex;
@@ -89,10 +76,7 @@ div.telegram_list__item {
     padding-right: 20px;
     padding-left:20px;
 }
-.headline {
-    font-size: $font-size-base + 10px;
-    line-height: 1.33;
-}
+
 .button-container {
     padding-left: 20px;
     max-width: 320px;
