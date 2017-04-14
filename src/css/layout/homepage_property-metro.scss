@@ -1,47 +1,27 @@
-.button {
-    font-size: $font-size-base;
-    border: 0px;
-    border-radius:2px;
-    height:$button-height;
-    font-family: $font-family-base;
 
-}
-.button--w320 {
-    @extend .button;
-    width:320px;
-    background-color: $primary-color;
-    color: $white;
-    margin-top: 10px;
-
-}
 .metro-image {
     width: 100%;
 }
 .wrap-property {
     max-width: $wrap-width;
     margin: 20px auto;
+    padding: 42px 0px 41px 0px;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
+    background-color: #fff;
 }
 .flex-container {
     display: flex;
     flex-direction: column;
-    flex-flow: wrap;
-    justify-content: space-around;
-    max-width: 50%;
     min-height: 212px;
 }
 
-.headline {
-    margin: 0;
-    /*font-size: 24px;*/
-    width: 100%;
-}
 .property-metro__estate {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    padding: 20px 0px 30px 0px;
 }
 .property-metro__station {
   position: relative;
@@ -67,7 +47,7 @@
     height: $button-height;
     float: left;
     padding: 0px 24px 0px 15px;
-    font-size: $font-size-base -2px;
+    font-size: $font-size-base - 2px;
     line-height: 1.75;
     color: #333;
     background-color: $white;
@@ -77,6 +57,7 @@
     word-break: normal;
     outline: none;
     font-family: $font-family-base;
+    margin-bottom: 22px;
 }
 
 

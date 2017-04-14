@@ -1,0 +1,18 @@
+<svg width="16" height="17" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>facebook-messenger</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-322 1137)" figma:type="canvas">
+<g id="facebook-messenger" figma:type="frame">
+<g id="Facebook_Messenger" figma:type="frame">
+<g id="Facebook_Messenger_1_" figma:type="frame">
+<g id="Shape" figma:type="vector-operation">
+<use xlink:href="#path0_fill" transform="translate(322 -1137)" fill="#0084FF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 7.45337C 0 3.33704 3.58173 0 8 0C 12.4183 0 16 3.33704 16 7.45337C 16 11.5698 12.4183 14.9069 8 14.9069C 7.20239 14.9069 6.43225 14.7976 5.70529 14.5951L 2.98135 16.0994L 2.98135 13.2574C 1.16333 11.8912 0 9.79895 0 7.45337ZM 6.75778 7.85095L 8.79504 10.0372L 13.1677 5.36646L 9.24225 7.55273L 7.1553 5.36646L 2.78262 10.0372L 6.75778 7.85095Z"/>
+</defs>
+</svg>
