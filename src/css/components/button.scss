@@ -1,0 +1,37 @@
+.button {
+    font-size: $font-size-base;
+    border: 0px;
+    height: $button-height;
+    font-family: $font-family-base;
+    outline: none;
+    border-radius: 2px;
+}
+
+.button--w200 {
+    width: 200px;
+    background-color: $white;
+    color: $primary-color;
+}
+
+.button--w320 {
+    width:320px;
+    background-color: $primary-color;
+    color: $white;
+    margin-top: 10px;
+}
+
+.button--w162 {
+    width: 162px;
+    background-color: $primary-color;
+    color: $white;
+}
+
+.button-header {
+    background-color: transparent;
+    width: 240px;
+    color: white;
+    cursor: pointer;
+}
+.button-header:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+}

@@ -61,21 +61,6 @@ a {
     line-height: 1.82;
 }
 
-.button {
-    font-size: $font-size-base;
-    border: 0px;
-    height:$button-height;
-    font-family: $font-family-base;
-
-}
-.button--w162 {
-    width:162px;
-    background-color: $primary-color;
-    color: $white;
-    border-radius: 2px;
-
-}
-
 .flex-column {
     display: flex;
     flex-direction: column;

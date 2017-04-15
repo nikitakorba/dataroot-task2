@@ -1,0 +1,18 @@
+<svg width="19" height="19" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group 3</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-333 1192)" figma:type="canvas">
+<g id="Group 3" figma:type="frame">
+<g id="Oval 3" opacity="0.6" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(333.359 -1192)" fill="#D8D8D8"/>
+</g>
+<g id="i" figma:type="text">
+<use xlink:href="#path1_fill" transform="translate(340.466 -1188.83)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 9.1374 19L 9.1374 19C 14.1839 19 18.2748 14.7467 18.2748 9.5L 18.2748 9.5C 18.2748 4.25329 14.1839 0 9.1374 0L 9.1374 8.44667e-34C 4.09096 6.9211e-17 0 4.25329 0 9.5L 7.51669e-34 9.5C 6.40317e-17 14.7467 4.09096 19 9.1374 19Z"/>
+<path id="path1_fill" d="M 2.43483 9L 1.62184 9L 1.62184 4.24512L 2.43483 4.24512L 2.43483 9ZM 1.55592 2.98389C 1.55592 2.85205 1.59548 2.74072 1.67458 2.6499C 1.75661 2.55908 1.87673 2.51367 2.03493 2.51367C 2.19313 2.51367 2.31325 2.55908 2.39528 2.6499C 2.47731 2.74072 2.51833 2.85205 2.51833 2.98389C 2.51833 3.11572 2.47731 3.22559 2.39528 3.31348C 2.31325 3.40137 2.19313 3.44531 2.03493 3.44531C 1.87673 3.44531 1.75661 3.40137 1.67458 3.31348C 1.59548 3.22559 1.55592 3.11572 1.55592 2.98389Z"/>
+</defs>
+</svg>
