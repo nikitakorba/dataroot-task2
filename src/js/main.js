@@ -21,10 +21,14 @@ var closeHM = document.getElementsByClassName("close-hm")[0];
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
     modal.style.display = "block";
+    for (var i = 0; i <blclass.length; i++) {
+            blclass[i].classList.add('blur-class');
+    }
 }
 btn2.onclick = function() {
         modal.style.display = "block";
         hamburgerMenu.style.display = "none";
+
 
     }
     // When the user clicks on <span> (x), close the modal
