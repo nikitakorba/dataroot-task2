@@ -12,7 +12,7 @@ var btn2 = document.getElementById('modal-button2');
 var span = document.getElementsByClassName("close")[0];
 // Get Modal
 var hamburgerMenu = document.getElementById('hamburger-menu');
-
+var blclass = document.getElementsByClassName("blur-this");
 // Get pseudoelement to open Modal
 var openHM = document.getElementById("open-hm");
 
@@ -31,14 +31,10 @@ btn2.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
     openHM.style.display = "block";
-    document.getElementsByClassName("property-search")[0].style.filter = "none";
     document.getElementsByClassName("header__logo")[0].style.display = "inline-flex";
-    document.getElementsByClassName("property-metro")[0].style.filter = "none";
-    document.getElementsByClassName("best-deals")[0].style.filter = "none";
-    document.getElementsByClassName("latest-ads")[0].style.filter = "none";
-    document.getElementsByClassName("telegram-communication")[0].style.filter = "none";
-    document.getElementsByClassName("blog-metrovka")[0].style.filter = "none";
-    document.getElementsByClassName("footer")[0].style.filter = "none";
+   for (var i = 0; i <blclass.length; i++) {
+            blclass[i].classList.remove('blur-class');
+    }
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -51,29 +47,21 @@ window.onclick = function(event) {
 openHM.onclick = function() {
     hamburgerMenu.style.display = "block";
     openHM.style.display = "none";
-    document.getElementsByClassName("property-search")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("header__logo")[0].style.display = "none";
-    document.getElementsByClassName("property-metro")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("best-deals")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("latest-ads")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("telegram-communication")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("blog-metrovka")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("footer")[0].style.filter = "blur(5px)";
+    for (var i = 0; i <blclass.length; i++) {
+            blclass[i].classList.add('blur-class');
+    }
 
+    document.getElementsByClassName("header__logo")[0].style.display = "none";
 };
 
 // When user clicks Close (x), close Modal
 closeHM.onclick = function() {
     hamburgerMenu.style.display = "none";
     openHM.style.display = "block";
-    document.getElementsByClassName("property-search")[0].style.filter = "none";
+   for (var i = 0; i <blclass.length; i++) {
+            blclass[i].classList.remove('blur-class');
+    }
     document.getElementsByClassName("header__logo")[0].style.display = "inline-flex";
-    document.getElementsByClassName("property-metro")[0].style.filter = "none";
-    document.getElementsByClassName("best-deals")[0].style.filter = "none";
-    document.getElementsByClassName("latest-ads")[0].style.filter = "none";
-    document.getElementsByClassName("telegram-communication")[0].style.filter = "none";
-    document.getElementsByClassName("blog-metrovka")[0].style.filter = "none";
-    document.getElementsByClassName("footer")[0].style.filter = "none";
 
 };
 
