@@ -1,16 +1,18 @@
-// p {
-//     margin: 0;
-// }
-//
-// .wrap {
-//     width: 100%;
-//     max-width: 890px;
-//     margin: 20px auto;
-//     display: flex;
-//     flex-flow: column wrap;
-//     min-height: 100px;
-//     justify-content: space-between;
-// }
+p {
+    margin: 0;
+}
+.long-term-rental {
+    padding: 20px 0;
+}
+.wrap-list {
+    width: 100%;
+    max-width: 890px;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100px;
+    justify-content: space-between;
+}
 .select1 {
     width: 115px;
     font-size: 14px;
@@ -57,7 +59,12 @@
     display: flex;
     justify-content: space-between;
 }
-
+@media screen and (min-width:1280px) {
+    .wrap-list {
+        margin:0;
+        padding-left: 2em;
+    }
+}
 @media screen and (max-width:400px) {
     .long-term-rental__heading {
         font-size: 16px;
