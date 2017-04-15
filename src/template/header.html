@@ -1,116 +1,96 @@
-<header class="header">
-    <div class="wrap-header">
-        <div class="left-menu">
-            <div class="header__logo">
-                <img src="logo.svg" />
-            </div>
-            <div class="left-menu-nav">
-                <a class="nav__item" href="#">Аренда</a>
-                <a class="nav__item" href="#">Продажа</a>
-                <a class="nav__item" href="#">Посуточно</a>
-                <a class="nav__item" href="#">&bull;&bull;&bull; Еще</a>
-                <!-- Добавить троеточие -->
-            </div>
-        </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="label-toggle"></label>
-        </input>
-        <div class="right-menu">
-            <button id="myBtn" class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button>
-            <button class="button header__button-enter" href="#">Войти</button>
-        </div>
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-
-                <div class="modal-left">
-                    <p class="modal-left__heading">Оставить заявку</p>
-                    <p class="modal-left__text">Нет времени искать по сайту?<br> Заполняй критерии поиска и получай актуальные объявления как только они появляются на Метровка
-                    </p>
-                </div>
-                <div class="modal-right">
-                    <span class="close">&times;</span>
-                    <div class="modal-right__estate">
-                        <div class="modal-right_list__item">
-                            <input type='radio' value='Flats' name='radio' class='modal-right__radio' id="modal-right__radio1" checked/>
-                            <label for="modal-right__radio1">Район</label>
-                        </div>
-                        <div class="modal-right_list__item">
-                            <input type='radio' value='Houses' name='radio' class='modal-right__radio' id="modal-right__radio2" />
-                            <label for="modal-right__radio2">Метро</label>
-                        </div>
-
+        <header class="header">
+            <div class="wrap-header">
+                <div class="left-menu">
+                    <div class="header__logo">
+                        <img src="../img/logo.svg" />
                     </div>
-                    <div class="modal-right__select">
-                        <select name="District">
+                    <div class="left-menu-nav">
+                        <a class="nav__item" href="#">Аренда</a>
+                        <a class="nav__item" href="#">Продажа</a>
+                        <a class="nav__item" href="#">Посуточно</a>
+                        <a class="nav__item" href="#">&bull;&bull;&bull; Еще</a>
+                        <!-- Добавить троеточие -->
+                    </div>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="label-toggle"></label>
+                </input>
+                <div class="right-menu">
+                    <button id="modal-button" class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button>
+                    <button class="button header__button-enter" href="#">Войти</button>
+                </div>
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+
+                        <div class="modal-left">
+                            <p class="modal-left__heading">Оставить заявку</p>
+                            <p class="modal-left__text">Нет времени искать по сайту?<br> Заполняй критерии поиска и получай актуальные объявления как только они появляются на Метровка
+                            </p>
+                        </div>
+                        <div class="modal-right">
+                            <span class="close">&times;</span>
+                            <div class="modal-right__estate">
+                                <div class="modal-right_list__item">
+                                    <input type='radio' value='Flats' name='radio' class='modal-right__radio' id="modal-right__radio1" checked/>
+                                    <label for="modal-right__radio1">Район</label>
+                                </div>
+                                <div class="modal-right_list__item">
+                                    <input type='radio' value='Houses' name='radio' class='modal-right__radio' id="modal-right__radio2" />
+                                    <label for="modal-right__radio2">Метро</label>
+                                </div>
+
+                            </div>
+                            <div class="modal-right__select">
+                                <select name="District">
                     <option class="modal-right__option" value="Polytechnical">Политехнический институт</option><!--Добавить красную точечку-->
                     <option class="modal-right__option" value="Maidan">Майдан Независимости</option>
                     <option class="modal-right__option" value="Olympiyska">Олимпийская</option>
                     </select>
+                            </div>
+                            <div class="property-search-modal__select-room">
+                                <p>Количество комнат:</p>
+                                <input class="select-room__checkbox" type="checkbox" name="rooms" value="1" id="property-search__checkbox6"><label for="property-search__checkbox6"></label>
+                                <input class="select-room__checkbox" type="checkbox" name="rooms" value="2" id="property-search__checkbox7"><label for="property-search__checkbox7"></label>
+                                <input class="select-room__checkbox" type="checkbox" name="rooms" value="3" id="property-search__checkbox8"><label for="property-search__checkbox8"></label>
+                                <input class="select-room__checkbox" type="checkbox" name="rooms" value="4" id="property-search__checkbox9"><label for="property-search__checkbox9"></label>
+                                <input class="select-room__checkbox" type="checkbox" name="rooms" value="5" id="property-search__checkbox10"><label for="property-search__checkbox10"></label>
+                            </div>
+                            <input class="modal-right__input-name" type="text" placeholder="Как Вас зовут?">
+                            <input class="modal-right__input-email" type="email" placeholder="Email">
+                            <button class="leave-request">Оставить заявку</button>
+
+                        </div>
                     </div>
-                    <div class="property-search-modal__select-room">
-                        <p>Количество комнат:</p>
-                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="1" id="property-search__checkbox6"><label for="property-search__checkbox6"></label>
-                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="2" id="property-search__checkbox7"><label for="property-search__checkbox7"></label>
-                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="3" id="property-search__checkbox8"><label for="property-search__checkbox8"></label>
-                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="4" id="property-search__checkbox9"><label for="property-search__checkbox9"></label>
-                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="5" id="property-search__checkbox10"><label for="property-search__checkbox10"></label>
-                    </div>
-                    <input class="modal-right__input-name" type="text" placeholder="Как Вас зовут?">
-                    <input class="modal-right__input-email" type="email" placeholder="Email">
-                    <button class="leave-request">Оставить заявку</button>
 
                 </div>
-            </div>
-
-        </div>
-        <div class="navigation">
-            <button id="open-hm" class="menu">
+                <div class="navigation">
+                    <button id="open-hm" class="menu">
             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </button>
 
-            <div id="hamburger-menu" class="modal">
-                <!-- Modal content -->
-                <div class="hamburger-menu__content">
-                    <div class="hamburger-menu__body">
-                        <span class="close-hm">×</span>
-                        <div class="logo">
-                            <img src="logo.svg" />
+                    <div id="hamburger-menu" class="modal">
+                        <!-- Modal content -->
+                        <div class="hamburger-menu__content">
+                            <div class="hamburger-menu__body">
+                                <span class="close-hm">×</span>
+                                <div class="logo">
+                                    <img src="../img/logo.svg" />
+                                </div>
+                                <ul class="nav-mob">
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Аренда</a></li>
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Продажа</a></li>
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Посуточно</a></li>
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Блог</a></li>
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Контакты</a></li>
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Новый поиск</a></li>
+                                    <li class="nav-mob__item"><button id="modal-button2" class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button></li>
+                                    <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Войти</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="nav-mob">
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Аренда</a></li>
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Продажа</a></li>
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Посуточно</a></li>
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Блог</a></li>
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Контакты</a></li>
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Новый поиск</a></li>
-                            <li class="nav-mob__item"><button class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button></li>
-                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Войти</a></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
 
-</header>
-<div class="wrap-header">
-    <div class="left-menu">
-        <div class="logo">
-            <img src="img/logo.svg" />
-        </div>
-        <nav class="nav">
-            <a class="nav__item" href="#">Аренда</a>
-            <a class="nav__item" href="#">Продажа</a>
-            <a class="nav__item" href="#">Посуточно</a>
-            <a class="nav__item" href="#">&bull;&bull;&bull; Еще</a>
-        </nav>
-    </div>
-    <div class="right-menu">
-        <div class="button-wrapper">
-            <button class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button>
-            <button class="button header__button-enter" href="#">Войти</<button>
-			</div>
-		</div>
-	</div>
-</header>
+        </header>

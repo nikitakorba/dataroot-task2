@@ -5,7 +5,7 @@ body {
 }
 
 .bg {
-    background-image: url(bg/homepage.png);
+    background-image: url(../img/homepage.png);
     background-size: cover;
     background-position: center;
 }
@@ -111,7 +111,6 @@ p {
     align-items: center;
 }
 
-.right {
     .button-wrapper {
         display: flex;
         align-items: center;
@@ -181,34 +180,34 @@ p {
         display: inline-block;
     }
     #property-search__checkbox1+label {
-        background: url(1trans.png)no-repeat;
+        background: url(../img/1trans.png)no-repeat;
     }
     #property-search__checkbox1:checked+label {
-        background: url(1white.png) no-repeat;
+        background: url(../img/1white.png) no-repeat;
     }
     #property-search__checkbox2+label {
-        background: url(2trans.png)no-repeat;
+        background: url(../img/2trans.png)no-repeat;
     }
     #property-search__checkbox2:checked+label {
-        background: url(2white.png)no-repeat;
+        background: url(../img/2white.png)no-repeat;
     }
     #property-search__checkbox3+label {
-        background: url(3trans.png)no-repeat;
+        background: url(../img/3trans.png)no-repeat;
     }
     #property-search__checkbox3:checked+label {
-        background: url(3white.png)no-repeat;
+        background: url(../img/3white.png)no-repeat;
     }
     #property-search__checkbox4+label {
-        background: url(4trans.png)no-repeat;
+        background: url(../img/4trans.png)no-repeat;
     }
     #property-search__checkbox4:checked+label {
-        background: url(4white.png)no-repeat;
+        background: url(../img/4white.png)no-repeat;
     }
     #property-search__checkbox5+label {
-        background: url(5trans.png)no-repeat;
+        background: url(../img/5trans.png)no-repeat;
     }
     #property-search__checkbox5:checked+label {
-        background: url(5white.png)no-repeat;
+        background: url(../img/5white.png)no-repeat;
     }
     #menu-toggle {
         display: none;
@@ -380,34 +379,34 @@ p {
         margin-bottom: 1rem;
     }
     #property-search__checkbox6+label {
-        background: url(1gray.png)no-repeat;
+        background: url(../img/1gray.png)no-repeat;
     }
     #property-search__checkbox6:checked+label {
-        background: url(1green.png) no-repeat;
+        background: url(../img/1green.png) no-repeat;
     }
     #property-search__checkbox7+label {
-        background: url(2gray.png)no-repeat;
+        background: url(../img/2gray.png)no-repeat;
     }
     #property-search__checkbox7:checked+label {
-        background: url(2green.png)no-repeat;
+        background: url(../img/2green.png)no-repeat;
     }
     #property-search__checkbox8+label {
-        background: url(3gray.png)no-repeat;
+        background: url(../img/3gray.png)no-repeat;
     }
     #property-search__checkbox8:checked+label {
-        background: url(3green.png)no-repeat;
+        background: url(../img/3green.png)no-repeat;
     }
     #property-search__checkbox9+label {
-        background: url(4gray.png)no-repeat;
+        background: url(../img/4gray.png)no-repeat;
     }
     #property-search__checkbox9:checked+label {
-        background: url(4green.png)no-repeat;
+        background: url(../img/4green.png)no-repeat;
     }
     #property-search__checkbox10+label {
-        background: url(5gray.png)no-repeat;
+        background: url(../img/5gray.png)no-repeat;
     }
     #property-search__checkbox10:checked+label {
-        background: url(5green.png)no-repeat;
+        background: url(../img/5green.png)no-repeat;
     }
     .modal-right__input-name {
         height: 40px;
@@ -621,5 +620,5 @@ p {
         .property-search-modal__select-room {
             text-align: center;
         }
-    }
+    
 }

@@ -24,7 +24,6 @@ div.telegram_list__item {
   border-bottom:  2px solid $primary-color;
     padding-bottom: 5px;
 }
-
 .tel-com__heading {
     display: flex;
     align-items: center;
@@ -82,7 +81,7 @@ div.telegram_list__item {
     max-width: 320px;
     width: 100%;
 }
-.content {
+.tel-content {
     padding-left: 20px;
 }
 .ol-list {
@@ -102,5 +101,10 @@ div.telegram_list__item {
     .metrovka-bot__picture {
         display: none;
 
+    }
+    div.telegram_list__item {
+    padding-right: 0px;}
+    .telegram__estate {
+        justify-content:space-around;
     }
 }

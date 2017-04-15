@@ -1,11 +1,13 @@
 /**
  * Created by nikita on 05.04.17.
  */
+window.onload = function () {
+    // body...
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn1 = document.getElementsByClassName("button-header")[0];
-var btn2 = document.getElementsByClassName("button-header")[1];
+var btn1 = document.getElementById('modal-button');
+var btn2 = document.getElementById('modal-button2');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // Get Modal
@@ -57,8 +59,7 @@ openHM.onclick = function() {
     document.getElementsByClassName("telegram-communication")[0].style.filter = "blur(5px)";
     document.getElementsByClassName("blog-metrovka")[0].style.filter = "blur(5px)";
     document.getElementsByClassName("footer")[0].style.filter = "blur(5px)";
-    document.getElementsByClassName("left-menu-nav")[0].style.display = "none";
-    document.getElementsByClassName("right-menu")[0].style.display = "none";
+
 };
 
 // When user clicks Close (x), close Modal
@@ -81,4 +82,5 @@ window.onclick = function(event) {
     if (event.target == hamburgerMenu) {
         hamburgerMenu.style.display = "none";
     }
+}
 }

@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #fff;
+    flex-flow: row wrap;
 
 }
 .proposal {
@@ -14,7 +15,12 @@
 .proposal:nth-child(5+1) {
     padding-right: 0px;
 }
-
+.best-deals__proposals {
+  display:flex;
+  justify-content:space-around;
+  width:100%;
+  flex-flow:row wrap;
+}
 .open-another-tab {
   width: 100%;
   max-width: $wrap-width;
@@ -67,8 +73,18 @@
   padding-right: 5px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
    .headline {
         font-size: $font-size-base + 2px;
+    }
+    .best-deals__proposals {
+      display:flex;
+      justify-content: flex-start;
+      width:100%;
+      flex-flow:row nowrap;
+      overflow-x:scroll;
+    }
+    .proposal {
+      padding-right: 1em;
     }
 }
