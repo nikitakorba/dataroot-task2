@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metrovka – Поиск недвижимости в Украине</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="bg">
+                <header class="header">
+                    <div class="wrap-header">
+                        <div class="left-menu">
+                            <div class="header__logo">
+                                <img src="../img/logo.svg" />
+                            </div>
+                            <div class="left-menu-nav">
+                                <a class="nav__item" href="#">Аренда</a>
+                                <a class="nav__item" href="#">Продажа</a>
+                                <a class="nav__item" href="#">Посуточно</a>
+                                <a class="nav__item" href="#">&bull;&bull;&bull; Еще</a>
+                                <!-- Добавить троеточие -->
+                            </div>
+                        </div>
+                        <input type="checkbox" id="menu-toggle">
+                        <label for="menu-toggle" class="label-toggle"></label>
+                        </input>
+                        <div class="right-menu">
+                            <button id="modal-button" class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button>
+                            <button class="button header__button-enter" href="#">Войти</button>
+                        </div>
+                        <div id="myModal" class="modal">
+        
+                            <!-- Modal content -->
+                            <div class="modal-content">
+        
+                                <div class="modal-left">
+                                    <p class="modal-left__heading">Оставить заявку</p>
+                                    <p class="modal-left__text">Нет времени искать по сайту?<br> Заполняй критерии поиска и получай актуальные объявления как только они появляются на Метровка
+                                    </p>
+                                </div>
+                                <div class="modal-right">
+                                    <span class="close">&times;</span>
+                                    <div class="modal-right__estate">
+                                        <div class="modal-right_list__item">
+                                            <input type='radio' value='Flats' name='radio' class='modal-right__radio' id="modal-right__radio1" checked/>
+                                            <label for="modal-right__radio1">Район</label>
+                                        </div>
+                                        <div class="modal-right_list__item">
+                                            <input type='radio' value='Houses' name='radio' class='modal-right__radio' id="modal-right__radio2" />
+                                            <label for="modal-right__radio2">Метро</label>
+                                        </div>
+        
+                                    </div>
+                                    <div class="modal-right__select">
+                                        <select name="District">
+                            <option class="modal-right__option" value="Polytechnical">Политехнический институт</option><!--Добавить красную точечку-->
+                            <option class="modal-right__option" value="Maidan">Майдан Независимости</option>
+                            <option class="modal-right__option" value="Olympiyska">Олимпийская</option>
+                            </select>
+                                    </div>
+                                    <div class="property-search-modal__select-room">
+                                        <p>Количество комнат:</p>
+                                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="1" id="property-search__checkbox6"><label for="property-search__checkbox6"></label>
+                                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="2" id="property-search__checkbox7"><label for="property-search__checkbox7"></label>
+                                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="3" id="property-search__checkbox8"><label for="property-search__checkbox8"></label>
+                                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="4" id="property-search__checkbox9"><label for="property-search__checkbox9"></label>
+                                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="5" id="property-search__checkbox10"><label for="property-search__checkbox10"></label>
+                                    </div>
+                                    <input class="modal-right__input-name" type="text" placeholder="Как Вас зовут?">
+                                    <input class="modal-right__input-email" type="email" placeholder="Email">
+                                    <button class="leave-request">Оставить заявку</button>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="navigation">
+                            <button id="open-hm" class="menu">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </button>
+        
+                            <div id="hamburger-menu" class="modal">
+                                <!-- Modal content -->
+                                <div class="hamburger-menu__content">
+                                    <div class="hamburger-menu__body">
+                                        <span class="close-hm">×</span>
+                                        <div class="logo">
+                                            <img src="../img/logo.svg" />
+                                        </div>
+                                        <ul class="nav-mob">
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Аренда</a></li>
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Продажа</a></li>
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Посуточно</a></li>
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Блог</a></li>
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Контакты</a></li>
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Новый поиск</a></li>
+                                            <li class="nav-mob__item"><button id="modal-button2" class="button button-header"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Разместить объявление</button></li>
+                                            <li class="nav-mob__item"><a class="mobile-nav__link" href="#">Войти</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                </header>
+        <div class="property-search">
+            <div class="wrap-search">
+                <div class="property-search__title">
+                    <h1 class="title">Поиск недвижимости в Украине</h1>
+                </div>
+                <div class="form-wrapper">
+                    <div class="select-city">
+                        <span class="select-city__title">Выберите город:</span>
+                        <select name="City">
+                          <option class="select-city__option" value="Kyiv">Киев</option>
+                          <option class="select-city__option" value="Lviv">Львов</option>
+                          <option class="select-city__option" value="Odessa">Одесса</option>
+                        </select>
+                    </div>
+                    <div class="select-room">
+                        <span class="select-room__title">Кол-во комнат:</span>
+                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="1" id="property-search__checkbox1"><label for="property-search__checkbox1"></label>
+                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="2" id="property-search__checkbox2"><label for="property-search__checkbox2"></label>
+                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="3" id="property-search__checkbox3"><label for="property-search__checkbox3"></label>
+                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="4" id="property-search__checkbox4"><label for="property-search__checkbox4"></label>
+                        <input class="select-room__checkbox" type="checkbox" name="rooms" value="5" id="property-search__checkbox5"><label for="property-search__checkbox5"></label>
+                    </div>
+                    <div class="button-submit">
+                        <br>
+                        <button class="button button--w200" type="submit">Перейти к поиску</button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="property-metro">
+            <div class="wrap-property">
+            <div class="flex-container">
+                <h3 class="headline">Недвижимость возле метро</h3>
+                <div class="property-metro__estate">
+                        <div class="search-estate_list__item">
+                            <input type='radio' value='Flats1' name='radio1' class='search-estate__radio' id="search-estate__radio1" checked/>
+                            <label for="search-estate__radio1">Квартиры</label>
+                        </div>
+                        <div class="search-estate_list__item">
+                            <input type='radio' value='Houses1' name='radio1' class='search-estate__radio'
+                            id="search-estate__radio2">
+                            <label for="search-estate__radio2">Дома</label>
+                        </div>
+                        <div class="search-estate_list__item">
+                            <input type='radio' value='Offices1' name='radio1' class='search-estate__radio'
+                                   id="search-estate__radio3">
+                            <label for="search-estate__radio3">Офисы</label>
+                        </div>
+                </div>
+                <div class="property-metro__station">
+                    <select name="Metro station">
+                        <option class="search-estate__option" value="Polytechnical">Политехнический институт</option><!--Добавить красную точечку-->
+                        <option class="search-estate__option" value="Maidan">Майдан Независимости</option>
+                        <option class="search-estate__option" value="Olympiyska">Олимпийская</option>
+                    </select>
+                    <br>
+                    <button class="button button--w320" type="button">Показать результаты поиска</button>
+                </div>
+            </div>
+            <div class="metro-img-container">
+                <img class="metro-img" src="img/metro.png">
+            </div>
+        </div>
+        </div>
+    <div class="best-deals">
+    
+        <div class="wrap">
+            <!-- <h3 class="headline">Лучшие предложения в Киеве</h3> -->
+            <div class="best-deals__heading">
+                <p class="headline">Лучшие предложения в Киеве</p>
+            </div>
+            <div class="best-deals__proposals">
+            <div class="proposal">
+                <a href="#"><img src="img/room.jpg" alt="estate"></a>
+                <!--Задать размеры -->
+                <p class="proposal__price">7 800 грн <img src="img/tick.svg" class="best-deals__tick"> </p>
+    
+                <p class="proposal__rooms">2 комн. &bull; 30 кв.м.</p>
+                <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+                <!--Добавить красную точечку-->
+            </div>
+            <div class="proposal">
+                <a href="#"><img src="img/room.jpg" alt="estate"></a>
+                <!--Задать размеры -->
+                <p class="proposal__price">10 200 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                <p class="proposal__rooms">2 комн. &bull; 30 кв.м.</p>
+                <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+                <!--Добавить красную точечку-->
+            </div>
+            <div class="proposal">
+                <a href="#"><img src="img/room.jpg" alt="estate"></a>
+                <!--Задать размеры -->
+                <p class="proposal__price">6 900 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                <p class="proposal__rooms">2 комн. &bull; 30 кв.м.</p>
+                <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+                <!--Добавить красную точечку-->
+                <!--Добавить красную точечку-->
+            </div>
+            <div class="proposal">
+                <a href="#"><img src="img/room.jpg" alt="estate"></a>
+                <!--Задать размеры -->
+                <p class="proposal__price">9 000 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                <p class="proposal__rooms">2 комн. &bull; 30 кв.м.</p>
+                <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+                <!--Добавить красную точечку-->
+                <!--Добавить красную точечку-->
+            </div>
+            </div>
+            <div class="open-another-tab">
+                <a href="#">Смотреть лучшие ценовые предложения</a>
+            </div>
+        </div>
+    
+    </div>
+    <div class="latest-ads">
+            <div class="wrap">
+                <div class="heading">
+                    <h1 class="latest-ads__headline">Последние обьявления в Киеве</h1>
+                </div>
+              <div class="latest-ads__estate">
+                    <div class="latest-ads_list__item">
+                        <input type='radio' value='Flats' name='radio' class='latest-ads__radio' id="latest-ads__radio4" checked/>
+                        <label for="latest-ads__radio4">Квартиры</label>
+                    </div>
+                    <div class="latest-ads_list__item">
+                        <input type='radio' value='Houses' name='radio' class='latest-ads__radio' id="latest-ads__radio5" />
+                        <label for="latest-ads__radio5">Дома</label>
+                    </div>
+                    <div class="latest-ads_list__item">
+                        <input type='radio' value='Offices' name='radio' class='latest-ads__radio' id="latest-ads__radio6" />
+                        <label for="latest-ads__radio6">Офисы</label>
+                    </div>
+                </div>
+                <div class="best-deals__proposals">
+                <div class="proposal">
+                    <a href="#"><img src="img/room1.png" alt="estate image"></a>
+                    <!--Задать размеры -->
+                    <p class="proposal__price">11800 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                    <p class="proposal__rooms">2 комн. &bull; 48 кв.м.</p>
+                    <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Политехнический институт</p>
+                    <!--Добавить красную точечку-->
+                </div>
+                <div class="proposal">
+                    <a href="#"><img src="img/room2.png" alt="estate image"></a>
+                    <!--Задать размеры -->
+                    <p class="proposal__price">15000 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                    <p class="proposal__rooms">3 комн. &bull; 100 кв.м.</p>
+                    <p class="proposal__metro"><img class="red-dot" src="img/reddot.svg">Шулявская</p>
+                    <!--Добавить красную точечку-->
+                </div>
+                <div class="proposal">
+                    <a href="#"><img src="img/room3.png" alt="estate image"></a>
+                    <!--Задать размеры -->
+                    <p class="proposal__price">11800 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+                    <p class="proposal__rooms">1 комн. &bull; 30 кв.м.</p>
+                    <p class="proposal__metro"><img class="blue-dot" src="img/bluedot.png">Контрактовая площадь</p>
+                    <!--Добавить синюю точечку-->
+                </div>
+                <div class="proposal">
+                    <a href="#"><img src="img/room4.png" alt="estate image"></a>
+                    <!--Задать размеры -->
+                    <p class="proposal__price">7000 грн <img src="img/tick.svg" class="best-deals__tick"></p>
+    
+                    <p class="proposal__rooms">2 комн. &bull; 40 кв.м.</p>
+                    <p class="proposal__metro">просп.Победы, 18А</p>
+                </div>
+                </div>
+                <div class="open-another-tab">
+                    <a href="#">Смотреть самые свежие объявления</a>
+                </div>
+            </div>
+          </div>
+    <div class="telegram-communication">
+            <div class="wrap__tel-com">
+                <div class="tel-com__heading">
+                    <h1>Общайтесь в Telegram</h1>
+                    <p class="heading-text">Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений.</p>
+                </div>
+                <div class="telegram__estate">
+                <div class="telegram_list__item">
+                    <input type='radio' value='Flats' name='radio' class='telegram__radio' id="telegram__radio1" checked/>
+                    <label for="telegram__radio1">Поиск недвижимости</label>
+                </div>
+                <div class="telegram_list__item">
+                    <input type='radio' value='Houses' name='radio' class='telegram__radio' id="telegram__radio2" />
+                    <label for="telegram__radio2">Общение с клиентами</label>
+                </div>
+                </div>
+            <div class="metrovka-bot">
+                <div class="metrovka-bot__picture">
+                    <img class="iphone" src="img/iphone.png" alt="Telegram on Iphone 5S">
+                </div>
+                <div class="metrovka-bot__telegram">
+                    <div class="telegram__heading">
+                        <img class="tg_logo" src="img/tg_logo.png" alt="Telegram Logo">
+                        <h1 class="headline">Telegram</h1>
+                    </div>
+                    <div class="tel-content">
+                        <h1 class="telegram_headline">Metrovka Bot</h1>
+                        <div class="list">
+                            <ol class="ol-list">
+                                <li>Собирайте аналитику по объектам</li>
+                                <li>Получайте подсказки по эффективному продвижению объявлений</li>
+                                <li>Общайтесь с клиентами через специальный канал телекоммуникации</li>
+                            </ol>
+                        </div>
+                        <button class="button button--w320" href="#">Присоедениться в Телеграмм</button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="blog-metrovka">
+        <div class="wrap">
+            <div class="blog-metrovka__description">
+                <h1 class="heading">Блог Metrovka</h1>
+                <p class="description">Хитрости, приемы, советы, фото и видео – все о том как продать, купить, сдать в аренду или арендовать недвижимость.</p>
+            </div>
+    
+            <div class="article-row">
+                <div class="article">
+                    <img class="article__image" src="img/article-lifehack.jpg" alt="Lifehack article">
+                    <span class="article__rubric article__rubric--lifehack">лайфхак</span>
+                    <span class="article__title">Киевляне могут оплатить коммуналку через Facebook…</span>
+                    <span class="article__author-and-time">Татьяна Малыняк • 5 мин чтения</span>
+                </div>
+                <div class="article">
+                    <img  class="article__image" src="img/article-advise.jpg" alt="Advise article">
+                    <span class="article__rubric article__rubric--advise">Совет Metrovka</span>
+                    <span class="article__title">ТОП-5 самых дешевых квартир Киева</span>
+                    <span class="article__author-and-time">Татьяна Малыняк • 4 мин чтения</span>
+                </div>
+                <div class="article">
+                    <img class="article__image" src="img/article_technology.jpg" alt="Technology article">
+                    <span class="article__rubric article__rubric--tech">Технологии</span>
+                    <span class="article__title">Смарт квартиры: цены, предложения и законность</span>
+                    <span class="article__author-and-time">Татьяна Малыняк • 2 мин чтения</span>
+    
+                </div>
+            </div>
+    
+            <div class="open-another-tab">
+                <a href="#">Перейти на страницу блога</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrap">
+        <div class="flex-column">
+            <div class="footer__menu">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="#">Metrovka</a>
+                        <ul class="footer-sub-menu">
+                            <li class="footer-sub-menu__item"><a href="#">О компании</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Пресса о нас</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Пользовательское соглашение</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Карта сайта</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Помощь</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">Партнерство</a>
+                        <ul class="footer-sub-menu">
+                            <li class="footer-sub-menu__item"><a href="#">Как разместить обьявление</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Инструменты продвижения</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Правила заполнения объявлений</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">Узнайте больше</a>
+                        <ul class="footer-sub-menu">
+                            <li class="footer-sub-menu__item"><a href="#">Бонусная программа Bonus+</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Telegram Metrovka Bot</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Как работает поиск</a></li>
+                            <li class="footer-sub-menu__item"><a href="#">Как пользоваться избранным</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="#">Контакты</a>
+                        <ul class="footer-sub-menu">
+                            <li class="footer-sub-menu__item">
+                                <div class="footer-sub-menu__logotypes">
+                                    <a href="#"><img src="img/facebook.jpg" alt="Facebook"></a>
+                                    <a href="#"><img src="img/vkontakte.jpg" alt="vkontakte"></a>
+                                    <a href="#"><img src="img/instagram.jpg" alt="instagram"></a>
+                                </div>
+                            </li>
+                            <li class="footer-sub-menu__item">
+                                ул. Жилянская, 37<br />
+                                <span class="footer-sub-menu__item--small">Киев, 01033</span>
+                            </li>
+                            <li class="footer-sub-menu__item">
+                                info@metrovka.ua
+                            </li>
+                            <li class="footer-sub-menu__item">
+                                <button class="button button--w162" href="#">Оставить заявку</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__logo">
+                <img src="img/logo-footer.png" alt="logo">
+            </div>
+    
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
